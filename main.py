@@ -53,9 +53,15 @@ def main():
 
     store = get_store(db)
 
+    print(store[0][0])
+
     department = get_department(db, store[0][0])
 
+    print(department[0][0])
+
     categories = get_categories(db, department[0][0])
+
+    print(categories[0][0])
 
     cat_arr = []
     for category in categories:
